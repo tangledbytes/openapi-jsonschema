@@ -16,3 +16,9 @@ Options:
   --silent                    skip output (default: false)
   -h, --help                  display help for command
 ```
+
+## Example
+
+```bash
+node . --location ./istio.yaml -t yaml --filter '$[?(@.kind=="CustomResourceDefinition" && @.spec.names.kind=="EnvoyFilter")]..validation.openAPIV3Schema.properties.spec' -o yaml --o-filter '$[0]'
+```
