@@ -19,6 +19,8 @@ Options:
 
 ## Example
 
+Download the binaries from the github releases. Only linux-x64, darwin-x64 and windows-x64 binaries are released
+
 ```bash
-node . --location ./istio.yaml -t yaml --filter '$[?(@.kind=="CustomResourceDefinition" && @.spec.names.kind=="EnvoyFilter")]..validation.openAPIV3Schema.properties.spec' -o yaml --o-filter '$[0]'
+openapi-jsonschema --location ./istio.yaml -t yaml --filter '$[?(@.kind=="CustomResourceDefinition" && @.spec.names.kind=="EnvoyFilter")]..validation.openAPIV3Schema.properties.spec' -o yaml --o-filter '$[0]'
 ```
