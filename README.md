@@ -1,3 +1,5 @@
+Transferred to https://github.com/layer5io/kubeopenapi-jsonschema
+
 # OpenAPI - JSON Schema
 
 This is a very basic node based CLI for converting OpenAPI schema to JSON Schema Draft 4
